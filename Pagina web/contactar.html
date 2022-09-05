@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Mi página web personal</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/fotoPersonal.jpeg">
+  <link rel="stylesheet" type="text/css" href="contactar.css">
+
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <div id="cabecera">
+    <div class=" header">
+        <p>Contactame</p>
+    </div>
+    <div id="menu">
+        <!--Menu desplegable-->
+        <ul class="desplegable">
+            <li><a href="inicio.html" class="active">Inicio</a></li>
+            <li><a>Mis estudios</a>
+                <ul >
+                    <li><a href="certificados.html">Certificados</a></li>
+                    <li><a href="estudios.html">Estudios</a></li>
+                </ul>
+            </li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a>Mis proyectos</a>
+              <ul >
+                <li><a href="bachillerato.html">proyecto1</a></li>
+                <li><a href="estudios.html">proyecto2</a></li>
+                <li><a href="estudios.html">proyecto3</a></li>
+                <li><a href="estudios.html">proyecto4</a></li>
+            </ul>
+            </li>
+            <li><a href="contactar.html">Contactame</a></li>
+        </ul>
+    </div>
+  </div>
+  <!-- Texto -->
+  <div id="contenido">
+      <p>
+          <span id="titulo">FORMULARIO</span>
+      </p>
+      
+      <form method="post" class="form-consulta"> 
+          <label>Nombres<br><br>
+			     <input id="tamano" type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
+		  </label>
+          <br><br>
+          
+          <label>Apellidos <br><br>
+                <input id="tamano" type="text" name="nombre" placeholder="Apellidos" class="campo-form" required>
+		  </label>
+		  <br><br>
+          
+		  <label>Correo <br><br>
+			     <input id="tamano" type="email" name="email" placeholder="Email" class="campo-form" required>
+		  </label>
+		  <br><br>
+          
+          <label>Teléfono<br><br>
+			<input id="tamano" type="text" name="telefono" placeholder="Telefono" class="campo-form" required>
+		  </label>
+		  <br><br>
+          
+          <label>Fecha de reunion <br><br>
+			<input id="tamano" type="date" name="fecha" placeholder="fecha" class="campo-form" required>
+		  </label>
+		  <br><br>
+          
+          <label>Sexo <br><br>
+			<input id="tamano" type="radio" name="sexo" class="campo-form" required> Masculino
+            <input id="tamano" type="radio" name="sexo" class="campo-form" required> Femenino
+		  </label>
+		  <br><br>
+          
+		  <label>Observaciones y comentarios<br><br>
+			<textarea id="tamano" name="consulta" class="campo-form" ></textarea>
+		  </label>
+		  <br><br>
+          
+		  <p id="boton">
+              <input id="botones" type="submit" value="Enviar" class="btn-form">
+              <input id="botones"type="reset" value="Resetear formulario">
+          </p>
+	</form>
+
+</div>
+</body>
+</html>

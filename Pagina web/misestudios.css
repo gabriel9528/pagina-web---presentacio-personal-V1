@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Monoton";
+  src: url("fonts/monoton.woff2");
+}
+
+html {
+  /*el bottom rigth sirve para hacer el degradado lineal*/
+	background: linear-gradient(70deg, #417D80, grey);
+  }
+padding-left: 30px;
+    padding-right: 30px;
+/*Cabecera*/
+#cabecera #titulo {
+  border-bottom: 2px solid #01DF74;
+  height: 2em;
+  /* para que la línea solo ocupe el ancho del texto */
+  display: inline-block;
+}
+
+#cabecera #titulo p {
+  border-bottom: 1px solid #01DF74;
+  padding-bottom: 0;
+  font-family: "Monoton";
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 0px;
+  height: 12px;
+  /* para que la línea solo ocupe el ancho del texto */
+  display: inline-block;
+}
+
+#cabecera{
+  text-align: center;
+  font-size: 1.5em;
+  color: #01DF74;
+}
+/*Fin cabecera*/
+
+/*Menu desplegable */
+#menu{
+ padding-left:2px;
+ margin-top:0%;
+ text-align:left;
+ width:100%;
+ font-family:arial;
+}
+.desplegable> li{
+ float:left;
+}
+
+.desplegable li a{
+ 
+ color: white;
+ text-decoration:none;
+ padding:25px 45px;
+ display:block;
+ font-family:arial;
+ font-size: 113%;
+}
+
+.desplegable li ul{
+ display:none;
+ position:absolute;
+ min-width:150px;
+}
+
+.desplegable li:hover > ul{
+ display:block;
+}
+
+.desplegable li ul li{
+ position:relative
+}
+ul  {
+  list-style-type: none; /*para que se quiten los puntos*/
+  margin:50; 
+  padding : 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+	/* para que se preseleccione el boton */
+.desplegable li a:hover {
+  background-color: #111
+}
+	/* el boton activo */
+.active {
+  background-color: red;
+}
+/*Fin menu desplegable */
+.mifoto{
+	text-align : right;
+	width : 25% ;
+	height : 310%;
+}
+
+/* Pie de página */
+.social{
+	text-align: center;
+	margin-right:50px;
+    width:6%;
+    height:6%;
+}
+#pie {
+  bottom: 0;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+  color: white;
+  font-family: "Courier", monospace;
+  font-size: 8pt;
+  line-height: 0;
+}

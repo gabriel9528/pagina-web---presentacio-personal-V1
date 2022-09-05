@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Monoton";
+  src: url("fonts/DK Coal Brush.otf");
+}
+
+@font-face{
+    font-family:"letra_normal";
+    src: url("fonts/miletra.ttf");
+}
+body{
+  background-color:#fff;
+  color: #333;
+  border-radius: 1em;
+}
+
+/* Inicio cabecera*/
+#cabecera #titulo {
+  color: blue;
+  height: 2em;
+  /* para que la línea solo ocupe el ancho del texto */
+  display: inline-block;
+}
+
+#cabecera a {
+  text-decoration: none;
+}
+.header{
+  font-family: 'Courier New', Courier, monospace;
+  color: #111;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+#cabecera #titulo  {
+  padding-bottom: 0;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.5em;
+  font-size: 80px;
+  line-height: 0px;
+  height: 12px;
+  /* para que la línea solo ocupe el ancho del texto */
+  display: inline-block;
+}
+
+#cabecera{
+  text-align: center;
+  font-size: 1.5em;
+  color: #01DF74;
+}
+ /*Final cabecera*/
+
+html {
+  /*el bottom rigth sirve para hacer el degradado lineal*/
+	background: linear-gradient(70deg, #ded9d8, #7b7877);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+/*Menu desplegable */
+#menu{
+ padding-left:2px;
+ margin-top:0%;
+ text-align:left;
+ width:100%;
+ font-family:arial;
+}
+.desplegable> li{
+ float:left;
+ border-radius: 3em;
+}
+
+.desplegable li a{
+ 
+ color: black;
+ text-decoration:none;
+ padding:25px 45px;
+ display:block;
+ font-family:'Courier New', Courier, monospace;
+ font-size: 113%;
+ border-radius: 1em;
+}
+
+.desplegable li ul{
+ display:none;
+ position:absolute;
+ min-width:150px;
+ border-radius: 1em;
+}
+
+.desplegable li:hover > ul{
+ display:block;
+}
+
+.desplegable li ul li{
+ position:relative;
+ border-radius: 3em;
+}
+ul  {
+  list-style-type: none; /*para que se quiten los puntos*/
+  margin:50; 
+  padding : 0px;
+  overflow: hidden;
+  background-color:aqua;
+  border-radius: 3em;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+	/* para que se preseleccione el boton */
+.desplegable li a:hover {
+  background-color:white;
+}
+	/* el boton activo */
+.active {
+  background-color:rgb(1, 89, 103);
+}
+/*Fin menu desplegable */
+
+#menu_izqda{
+    font-size: 20px;
+    width: 20%;
+    height: 100%;
+    font-family: "letra_normal";
+    display: inline-block;
+}
+
+#aficiones{
+    float:right;
+    width: 75%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+#aficion1{
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    background: linear-gradient(100deg, aqua, white);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 2em;
+}
+
+#imagen_futbol{
+    text-align: right;
+    width: 20%;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-style: outset;
+    border-color:black;
+}
+
+.imagen_futbol{
+    height: 200px;
+    width: 250px;
+}
+/* Lista de la izquierda */
+#enlaces {
+    font-family: "letra_normal";
+	text-align: left;
+	font-size: 40px;
+	 background: linear-gradient(70deg, #d55353, grey);
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+
+ul.a {
+	padding: 0;
+}
+
+ul.b{
+	list-style-type: circle;
+}
+li.c {
+	font-size: 40px;;
+  	color:black;
+    font-weight: bolder;
+    text-align: center;
+	
+}
+p{
+  font-family: 'Courier New', Courier, monospace;
+}
+/*Fin lista izquierda*/
